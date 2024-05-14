@@ -22,7 +22,7 @@ def check_callback_data(callback):
             marcup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             btn = types.KeyboardButton(text='Подворотни Санкт-Петербурга')
             btn1 = types.KeyboardButton(text='Здесь был Брат')
-            btn2 = types.KeyboardButton(text='Санкт-Петербург Достоевского')
+            btn2 = types.KeyboardButton(text='Санкт-Петербург в произведениях Достоевского')
             btn3 = types.KeyboardButton(text='В Питере - жить')
             btn4 = types.KeyboardButton(text='В Питере - пить')
             btn5 = types.KeyboardButton(text='Вернуться в меню')
@@ -68,7 +68,7 @@ def get_text(message):
        marcup.add(btn, btn1, btn2, btn3, btn4, btn5, btn6)
        bot.send_message(message.chat.id, 'Выбери место, о котором хочешь узнать подробнее', reply_markup=marcup)
 
-    elif message.text == 'Санкт-Петербург Достоевского':
+    elif message.text == 'Санкт-Петербург в произведениях Достоевского':
         bot.send_photo(message.chat.id,r'https://psv4.userapi.com/c237331/u537061732/docs/d25/354262ee93aa/3.jpg?extra=lcc5Rx9Uj6bFio0U3D_fdN2zJCnVuNm7NUOCFBhDqdYfdjIONkJ-q4imYYBOUE146mwyxpV7zTNb_HN9aaMfY1Asp3fbFE1aCiSvQgFed2TjHrHCmVzH6uM036F9pHE_jAciqnfGgeEAp_wCBT2PJJ8','Жизнь и творчество Федора Михайловича Достоевского неотделимы от Петербурга. В своем творчестве писатель постоянно обращается к образу города, описывая его как мрачное, угрюмое место, враждебное человеку. Созданные им персонажи блуждают по узким, дождливым улицам, сталкиваясь с собственными страхами и искушениями, что делает городской пейзаж не просто фоном, но и активным участником литературной драмы.')#@bot.callback_query_handler(func=lambda callback: callback.data)
         marcup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn = types.KeyboardButton(text='Литературно-мемориальный музей Достоевского')
@@ -120,7 +120,7 @@ def get_text(message):
         marcup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn = types.KeyboardButton(text='Подворотни Санкт-Петербурга')
         btn1 = types.KeyboardButton(text='Здесь был Брат')
-        btn2 = types.KeyboardButton(text='Санкт-Петербург Достоевского')
+        btn2 = types.KeyboardButton(text='Санкт-Петербург в произведениях Достоевского')
         btn3 = types.KeyboardButton(text='В Питере - жить')
         btn4 = types.KeyboardButton(text='В Питере - пить')
         btn5 = types.KeyboardButton(text='Вернуться в меню')
